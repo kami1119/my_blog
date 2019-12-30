@@ -1,0 +1,25 @@
+baseURL = "https://kami1119.github.io/"
+languageCode = "zh-tw"
+title = "Allen's Hugo Blog"
+theme = "mainroad"
+
+[Params]
+  subtitle = "(Allen Hsieh)" # 部落格的次標題
+  description = "Note of Anything" # 部落格的敘述
+  opengraph = true
+  twitter_cards = false
+  readmore = true # 秀出 "Read more" 按鈕在文章列表下
+  authorbox = true
+  post_navigation = true
+  post_meta = ["date", "categories"] # 根據文章的那些meta資訊來決定排序
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist"]
+
+[Params.widgets]
+  recent_num = 10 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
